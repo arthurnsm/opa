@@ -2,10 +2,9 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Client } from '@notionhq/client';
 
 export default async function handler(
-  request: VercelRequest,
+  _request: VercelRequest, // <-- alterado
   response: VercelResponse
 ) {
-  
   try {
     const NOTION_KEY = process.env.NOTION_API_KEY;
     const NOTION_DATABASE_ID = process.env.NOTION_DATABASE_ID; 
@@ -24,12 +23,8 @@ export default async function handler(
 
     const notionResponse = await notion.databases.query({
       database_id: NOTION_DATABASE_ID,
-      
       sorts: [ 
-        { 
-          property: "Id",
-          direction: "ascending"
-        } 
+        { property: "Id", direction: "ascending" } 
       ]
     });
     
