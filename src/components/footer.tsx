@@ -32,10 +32,14 @@ function Footer(){
 </div>
 
 
-<div className="flex flex-col items-center justify-center p-8 w-1/3 ">
-        <div className='flex'><span className='font-[inter] text-[#FEB229] font-bold text-4xl'>Doe pelo QR code</span></div>
-        <img src={QRcode}></img>
-        <div>
+<div className="flex flex-col  justify-end p-8 w-1/3 ">
+        <div className='flex justify-end mb-8'><span className='font-[inter] text-[#FEB229] justify-end font-bold text-4xl'>Doe pelo QR code</span></div>
+        
+        <div className='flex justify-end'>
+
+        <img src={QRcode} className='flex w-64 '></img>
+        </div>
+        <div className='flex justify-end'>
             <button className='flex gap-2 bg-[#DF7F19] text-2xl font-[inter] text-white py-4 text-center justify-center rounded-3xl items-center px-4'>
                 Copiar código pix <Copy/>
             </button>

@@ -8,9 +8,10 @@ interface TopicsProps{
     link: string
     numero: number
     scrollRef?: RefObject<HTMLDivElement | null>; 
+    img: string
 }
 
-function Topics({title,message,link, numero, scrollRef}:TopicsProps){
+function Topics({title,message,link, numero, scrollRef,img}:TopicsProps){
 const isPar = numero % 2 === 0;
 
 
@@ -30,7 +31,7 @@ const isPar = numero % 2 === 0;
                 </Link>
             </div>
         </div>
-        <div className="flex md:w-150 md:h-110  max-w-[600px]  bg-[#EBEBEB] rounded-4xl" ></div>
+        <div className="flex md:w-150 md:h-110  max-w-[600px]  bg-[#EBEBEB] rounded-4xl" ><img src={img} className=' rounded-4xl md:w-150 md:h-110 max-w-[600px] object- aspect-auto ' alt="seila" /></div>
     
     </div>
     </div>
