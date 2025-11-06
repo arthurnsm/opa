@@ -2,16 +2,14 @@ import Whatsapp from '../../public/icon/whatsapp.png'
 import Instagram from '../../public/icon/instagram_icon.png'
 import { Menu } from 'lucide-react';
 import { Link } from 'react-router-dom'
-import Logo from '../../public/images/logo.png.png'
-
-
+import Teste from '../../public/images/loggo-teste.png'
 function Navbar (){
 
     return(
         <nav>
         <div className="flex w-full py-4 items-center bg-[#e4e4e4] justify-between">
         <div className="flex">
-            <Link to='/' className='px-8'><img src={Logo} alt="Logo"/></Link>
+            <Link to='/' className='px-8'><img src={Teste} alt="Logo" className='w-[60px] h-auto'/></Link>
         </div>
         <div className="md:flex hidden gap-20 justify-center align-center items-center ">
             <Link to="/sobre" className='flex font-[inter] hover:text-amber-700 transition md:text-sm lg:text-xl text-center justify-center '>Sobre a  O.P.A</Link>
