@@ -30,7 +30,7 @@ export const AnimalCard: React.FC<AnimalCardProps> = ({ animal }) => {
   const bgColorClass = getBgColorClass(animal.cor);
 
   const isEven = animal.idAnimal !== null && animal.idAnimal % 2 === 0;
-  const link = `Olá,%20fiquei%20interessado%20no%20${animal.nome}%20e%20gostaria%20de%20saber%20mais%20sobre%20ele!`;
+  const link = `https://wa.me/988742991?text=Olá,%20fiquei%20interessado%20no%20${animal.nome}%20e%20gostaria%20de%20saber%20mais%20sobre%20ele!`;
   
   return (
     <div className="m-2 w-full justify-center items-center align-center p-38">
