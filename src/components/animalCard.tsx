@@ -14,13 +14,9 @@ const normalizeString = (str: string | null) =>
 
 export const AnimalCard: React.FC<AnimalCardProps> = ({ animal }) => {
   const statusNormalizado = normalizeString(animal.disponibilidade);
-  const isDisponivel = statusNormalizado === 'disponivel';
+  //const isDisponivel = statusNormalizado === 'disponivel';
   
-  // const availabilityBaseClasses = "mt-4 rounded-full py-2 px-2 text-center font-bold text-sm text-white shadow-md";
-  // const availabilityDynamicClasses = isDisponivel 
-  //   ? "bg-green-600 "
-  //   : "bg-red-400 ";
-    
+
   var locked = 'flex border-3 rounded-2xl w-60 h-auto text-center align-center justify-center md:shadow-2xl py-4 duration-300 ease-in-out hover:scale-[1.1] transition hover:cursor-pointer';
   var label = 'Tenho Interesse';
 
